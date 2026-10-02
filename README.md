@@ -1,10 +1,6 @@
 # oop2026
 
-Bu repository 2026 YBS OOP dersindeki projeleri barındırır
+Bu repository 2026 Yönetim Bilişim Sistemleri Object Oriented Programming dersi uygulama projelerini barındırır
+Ders konuları işlendikçe, uygulama ders çıktıları bu repository'de biriktirilir
 ...
-
-İlk Hafta ödevleri 27 kişi teslim etmedi....
-Teslim edenler ise 55 kişidir.
-
-
-Gelecek hafta herkes Ödev2 
+Öğrenciler, dersteki güncel durumu, bu repository'ye bakarak görebilirler

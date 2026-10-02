@@ -9,9 +9,9 @@ public class Kitap {
 
     //Constructor method
     public Kitap(String isbn, String baslik, String yazar, int yayinYili, String durum) {
-        this.isbn = isbn;
         this.baslik = baslik;
         this.yazar = yazar;
+        this.isbn = isbn;
         this.yayinYili = yayinYili;
         this.durum = durum;
     }

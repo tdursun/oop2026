@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class KitapKopyasi {
 
     private final String barkod;
     private final Kitap kitap;
     private KitapDurumu durum;
+    private final List<OduncAlma> oduncAlmalar = new ArrayList<>();
 
     // Constructor
     public KitapKopyasi(String barkod, Kitap kitap) {
@@ -40,6 +45,21 @@ public class KitapKopyasi {
 
     public KitapDurumu getDurum() {
         return durum;
+    }
+
+    public List<OduncAlma> getOduncAlmalar() {
+        return Collections.unmodifiableList(oduncAlmalar);
+    }
+
+    public void oduncAlmaEkle(OduncAlma oduncAlma) {
+        if (oduncAlma == null || oduncAlma.getKitapKopyasi() != this) {
+            throw new IllegalArgumentException(
+                "Ödünç alma kaydı bu kitap kopyasına ait olmalıdır."
+            );
+        }
+        if (!oduncAlmalar.contains(oduncAlma)) {
+            oduncAlmalar.add(oduncAlma);
+        }
     }
 
     // Davranış metotları

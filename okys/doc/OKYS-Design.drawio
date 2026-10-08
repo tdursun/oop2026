@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" pages="2">
   <diagram name="ClassDiyagram" id="Cc9jagbLBwd1p3YQBy6T">
-    <mxGraphModel dx="1784" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1854" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="_700aMD1UKLhO7RFcUiO-3" parent="_700aMD1UKLhO7RFcUiO-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="200" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="_700aMD1UKLhO7RFcUiO-4" parent="_700aMD1UKLhO7RFcUiO-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ oduncIste(t): boolean" vertex="1">
+        <mxCell id="_700aMD1UKLhO7RFcUiO-4" parent="_700aMD1UKLhO7RFcUiO-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ kitapBilgisi(t): String" vertex="1">
           <mxGeometry height="26" width="200" y="138" as="geometry" />
         </mxCell>
         <mxCell id="n28p4jeGVnrDyd6U1Sps-2" parent="_700aMD1UKLhO7RFcUiO-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ kitapKopyasiEkle(t): boolean" vertex="1">
@@ -49,7 +49,7 @@
         <mxCell id="n28p4jeGVnrDyd6U1Sps-6" parent="_700aMD1UKLhO7RFcUiO-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ oduncVer(): boolean" vertex="1">
           <mxGeometry height="26" width="140" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="n28p4jeGVnrDyd6U1Sps-5" parent="_700aMD1UKLhO7RFcUiO-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ iadeEt(): boolean" vertex="1">
+        <mxCell id="n28p4jeGVnrDyd6U1Sps-5" parent="_700aMD1UKLhO7RFcUiO-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ iadeAl(): boolean" vertex="1">
           <mxGeometry height="26" width="140" y="138" as="geometry" />
         </mxCell>
         <mxCell id="pSR2M5sUEJoAkqRoiS4w-5" edge="1" parent="1" source="_700aMD1UKLhO7RFcUiO-1" style="endArrow=open;html=1;endSize=12;startArrow=diamond;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="_700aMD1UKLhO7RFcUiO-15" value="">

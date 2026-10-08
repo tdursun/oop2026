@@ -19,7 +19,7 @@ mevcut ödünç aldıkları kitapların süresini uzatabilirler.
 
 2.6. Kütüphane Görevlisi üyelerin ödünç alma taleplerini onaylayıp takip edebilir.
 
-2.7. Sistemdeki her Kitap; benzersiz bir ISBN numarası, başlık, yazar, yayın yılı ve durum (Ödünç Verilebilir / Ödünç Verildi) bilgilerine sahiptir. 
+2.7. Sistemdeki her Kitap; benzersiz bir ISBN numarası, başlık, yazar, yayın yılı bilgilerine sahiptir. 
 
 2.8.Bir kitabın kütüphanede birden fazla fiziksel kopyası (Kitap Kopyası) bulunabilir; her kopyanın kendine ait bir barkod numarası vardır.
 

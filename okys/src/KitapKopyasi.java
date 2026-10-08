@@ -24,6 +24,8 @@ public class KitapKopyasi {
 
         // Yeni oluşturulan kopya başlangıçta mevcut
         this.durum = KitapDurumu.MEVCUT;
+
+        kitap.kitapKopyasiEkle(this);
     }
 
     // Getter metotları

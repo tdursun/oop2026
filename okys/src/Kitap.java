@@ -5,6 +5,7 @@ public class Kitap {
     private String yazar;
     private int yayinYili;
     private KitapDurumu durum;
+    private final java.util.List<KitapKopyasi> kopyalar = new java.util.ArrayList<>();
 
     public Kitap(
             String isbn,
@@ -63,6 +64,26 @@ public class Kitap {
         return durum;
     }
 
+    public java.util.List<KitapKopyasi> getKopyalar() {
+        return java.util.Collections.unmodifiableList(kopyalar);
+    }
+
+    public void kitapKopyasiEkle(KitapKopyasi kopya) {
+        if (kopya == null) {
+            throw new IllegalArgumentException("Kitap kopyası boş olamaz.");
+        }
+
+        if (kopya.getKitap() != this) {
+            throw new IllegalArgumentException(
+                "Bu kitap kopyası başka bir kitaba ait."
+            );
+        }
+
+        if (!kopyalar.contains(kopya)) {
+            kopyalar.add(kopya);
+        }
+    }
+
     public void oduncVer() {
         if (durum != KitapDurumu.MEVCUT) {
             throw new IllegalStateException(
@@ -88,7 +109,8 @@ public class Kitap {
              + " | YAZARI: " + yazar
              + " | YAYIN YILI: " + yayinYili
              + " | ISBN: " + isbn
-             + " | DURUM: " + durum;
+             + " | DURUM: " + durum
+             + " | KOPYA SAYISI: " + kopyalar.size();
     }
 
 }//Kitap

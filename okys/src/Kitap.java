@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Kitap {
 
     private final String isbn;
@@ -5,7 +8,7 @@ public class Kitap {
     private String yazar;
     private int yayinYili;
     private KitapDurumu durum;
-    private final java.util.List<KitapKopyasi> kopyalar = new java.util.ArrayList<>();
+    private final List<KitapKopyasi> kopyalar = new ArrayList<>();
 
     public Kitap(
             String isbn,

@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) 
     {
@@ -56,6 +58,20 @@ public class Main {
         // 5. Örnek: Distopya (Kayıp)
         Kitap kitap1884 = new Kitap("9789750719388", "1844", "George Orwell", 2000);
 
+        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@example.com", "sifre");
+        KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
+            "G001", "Mehmet Demir", "mehmet@example.com", "sifre"
+        );
+        OduncAlma odunc = new OduncAlma(
+            "O001",
+            LocalDate.now(),
+            LocalDate.now().plusDays(14),
+            null,
+            uye,
+            kopya2
+        );
+        System.out.println(uye.getAd() + " için işlem: " + odunc.getIslemNo());
+        System.out.println("Görevli: " + gorevli.getAd());
 
     }
 }

@@ -11,18 +11,6 @@ public class Main {
             2008
         );
         
-        System.out.println(kitap1.getDurum());
-        // MEVCUT
-        
-        kitap1.oduncVer();
-        
-        System.out.println(kitap1.getDurum());
-        // ODUNC_VERILDI
-        
-        kitap1.teslimAl();
-        
-        System.out.println(kitap1.getDurum());
-        // MEVCUT
         KitapKopyasi kopya1 =
             new KitapKopyasi("BC001", kitap1);
         

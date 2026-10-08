@@ -7,7 +7,6 @@ public class Kitap {
     private String baslik;
     private String yazar;
     private int yayinYili;
-    private KitapDurumu durum;
     private final List<KitapKopyasi> kopyalar = new ArrayList<>();
 
     public Kitap(
@@ -44,7 +43,6 @@ public class Kitap {
         this.baslik = baslik;
         this.yazar = yazar;
         this.yayinYili = yayinYili;
-        this.durum = KitapDurumu.MEVCUT;
     }
 
     public String getIsbn() {
@@ -61,10 +59,6 @@ public class Kitap {
 
     public int getYayinYili() {
         return yayinYili;
-    }
-
-    public KitapDurumu getDurum() {
-        return durum;
     }
 
     public java.util.List<KitapKopyasi> getKopyalar() {
@@ -87,32 +81,11 @@ public class Kitap {
         }
     }
 
-    public void oduncVer() {
-        if (durum != KitapDurumu.MEVCUT) {
-            throw new IllegalStateException(
-                "Kitap ödünç verilemez. Mevcut durum: " + durum
-            );
-        }
-
-        durum = KitapDurumu.ODUNC_VERILDI;
-    }
-
-    public void teslimAl() {
-        if (durum != KitapDurumu.ODUNC_VERILDI) {
-            throw new IllegalStateException(
-                "Yalnızca ödünç verilmiş kitap teslim alınabilir."
-            );
-        }
-
-        durum = KitapDurumu.MEVCUT;
-    }
-
     public String kitapBilgisi() {
         return "ADI: " + baslik
              + " | YAZARI: " + yazar
              + " | YAYIN YILI: " + yayinYili
              + " | ISBN: " + isbn
-             + " | DURUM: " + durum
              + " | KOPYA SAYISI: " + kopyalar.size();
     }
 

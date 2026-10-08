@@ -21,6 +21,19 @@ public class Main {
         
         System.out.println(kitap1.getDurum());
         // MEVCUT
+        KitapKopyasi kopya1 =
+            new KitapKopyasi("BC001", kitap1);
+        
+        KitapKopyasi kopya2 =
+            new KitapKopyasi("BC002", kitap1);
+        
+        System.out.println(kopya1.kopyaBilgisi());
+        System.out.println(kopya2.kopyaBilgisi());
+        
+        kopya1.oduncVer();
+        
+        System.out.println(kopya1.getDurum());
+        
 
         // 2. Örnek: Algoritmalar (Ödünç Verildi)
         Kitap kitapTeknik2 = new Kitap("9780262033848", "Introduction to Algorithms", "Thomas H. Cormen", 2009);

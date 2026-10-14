@@ -28,3 +28,5 @@ mevcut ödünç aldıkları kitapların süresini uzatabilirler.
 2.10.Bir Ödünç Alma kaydı, tam olarak bir Üye ve bir Kitap Kopyası ile doğrudan ilişkilidir. 
 
 2.11.Bir üye tek seferde birden fazla kitap kopyası ödünç alabilir, ancak her bir kopya için ayrı bir Ödünç Alma satırı tutulur.
+
+2.21 EKLENECEK...

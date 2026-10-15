@@ -8,7 +8,8 @@ public class Kitap {
     private String yazar;
     private int yayinYili;
     private final List<KitapKopyasi> kopyalar = new ArrayList<>();
-
+    
+    //constructor
     public Kitap(
             String isbn,
             String baslik,
@@ -16,27 +17,19 @@ public class Kitap {
             int yayinYili) {
 
         if (isbn == null || isbn.isBlank()) {
-            throw new IllegalArgumentException(
-                "ISBN boş olamaz."
-            );
+            throw new IllegalArgumentException("ISBN boş olamaz.");
         }
 
         if (baslik == null || baslik.isBlank()) {
-            throw new IllegalArgumentException(
-                "Başlık boş olamaz."
-            );
+            throw new IllegalArgumentException("Başlık boş olamaz.");
         }
 
         if (yazar == null || yazar.isBlank()) {
-            throw new IllegalArgumentException(
-                "Yazar boş olamaz."
-            );
+            throw new IllegalArgumentException("Yazar boş olamaz.");
         }
 
         if (yayinYili <= 0) {
-            throw new IllegalArgumentException(
-                "Yayın yılı geçersiz."
-            );
+            throw new IllegalArgumentException("Yayın yılı geçersiz.");
         }
 
         this.isbn = isbn;
@@ -65,15 +58,14 @@ public class Kitap {
         return java.util.Collections.unmodifiableList(kopyalar);
     }
 
+    // one-to-many ilişkisini kuran metod
     public void kitapKopyasiEkle(KitapKopyasi kopya) {
         if (kopya == null) {
             throw new IllegalArgumentException("Kitap kopyası boş olamaz.");
         }
 
         if (kopya.getKitap() != this) {
-            throw new IllegalArgumentException(
-                "Bu kitap kopyası başka bir kitaba ait."
-            );
+            throw new IllegalArgumentException("Bu kitap kopyası başka bir kitaba ait.");
         }
 
         if (!kopyalar.contains(kopya)) {

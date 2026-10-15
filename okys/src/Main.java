@@ -5,12 +5,10 @@ import java.util.List;
 public class Main {
     private static final List<Kitap> kutuphane = new ArrayList<>();
 
-
-
     private static void kutuphaneListeYazdir() {
         for (Kitap kitap : kutuphane) {
             System.out.println(kitap.kitapBilgisi());
-            for (KitapKopyasi kopya : kitap.getKopyalar()) {
+            for (KitapKopyasi kopya : kitap.getFizikselKopyalar()) {
                 System.out.println("  " + kopya.kopyaBilgisi());
             }
         }
@@ -68,9 +66,9 @@ public class Main {
 
       
 
-        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@example.com", "sifre");
+        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123");
         KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
-            "G001", "Mehmet Demir", "mehmet@example.com", "sifre"
+            "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre"
         );
         OduncAlma odunc = new OduncAlma(
             "O001",
@@ -86,6 +84,5 @@ public class Main {
         kutuphaneListeYazdir();
 
     }//main
-
 
 }

@@ -7,7 +7,7 @@ public class Kitap {
     private String baslik;
     private String yazar;
     private int yayinYili;
-    private final List<KitapKopyasi> kopyalar = new ArrayList<>();
+    private final List<KitapKopyasi> fizikselKopyalar = new ArrayList<>();
     
     //constructor
     public Kitap(
@@ -38,6 +38,7 @@ public class Kitap {
         this.yayinYili = yayinYili;
     }
 
+    // getter metodlar
     public String getIsbn() {
         return isbn;
     }
@@ -54,8 +55,8 @@ public class Kitap {
         return yayinYili;
     }
 
-    public java.util.List<KitapKopyasi> getKopyalar() {
-        return java.util.Collections.unmodifiableList(kopyalar);
+    public java.util.List<KitapKopyasi> getFizikselKopyalar() {
+        return fizikselKopyalar;
     }
 
     // one-to-many ilişkisini kuran metod
@@ -68,8 +69,8 @@ public class Kitap {
             throw new IllegalArgumentException("Bu kitap kopyası başka bir kitaba ait.");
         }
 
-        if (!kopyalar.contains(kopya)) {
-            kopyalar.add(kopya);
+        if (!fizikselKopyalar.contains(kopya)) {
+            fizikselKopyalar.add(kopya);
         }
     }
 
@@ -78,7 +79,7 @@ public class Kitap {
              + " | YAZARI: " + yazar
              + " | YAYIN YILI: " + yayinYili
              + " | ISBN: " + isbn
-             + " | KOPYA SAYISI: " + kopyalar.size();
+             + " | KOPYA SAYISI: " + fizikselKopyalar.size();
     }
 
 }//Kitap

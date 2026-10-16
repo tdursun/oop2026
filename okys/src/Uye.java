@@ -4,19 +4,19 @@ import java.util.List;
 public class Uye extends Kullanici {
 
     private String ilgiAlani;
-    private final List<OduncAlma> oduncAlmalar = new ArrayList<>();
+    private final List<OduncKaydi> oduncAlmalar = new ArrayList<>();
 
     public Uye(String id, String ad, String eposta, String sifre, String interests) {
         super(id, ad, eposta, sifre);
         this.ilgiAlani = interests;
     }
 
-    public List<OduncAlma> getOduncAlmalar() {
+    public List<OduncKaydi> getOduncAlmalar() {
         return oduncAlmalar;
     }
 
-    public void oduncAlmaEkle(OduncAlma oduncAlma) {
-        if (oduncAlma == null || oduncAlma.getUye() != this) {
+    public void oduncAlmaEkle(OduncKaydi oduncAlma) {
+        if (oduncAlma == null || oduncAlma.getKimde() != this) {
             throw new IllegalArgumentException("Ödünç alma kaydı bu üyeye ait olmalıdır.");
         }
         if (!oduncAlmalar.contains(oduncAlma)) {

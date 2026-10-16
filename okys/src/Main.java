@@ -72,7 +72,7 @@ public class Main {
         uye1.bilgiPrintEt();
         gorevli.bilgiPrintEt();
 
-        OduncAlma odunc = new OduncAlma(
+        OduncKaydi odunc = new OduncKaydi(
             "O001",
             LocalDate.now(),
             LocalDate.now().plusDays(14),

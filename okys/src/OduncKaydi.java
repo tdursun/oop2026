@@ -1,20 +1,20 @@
 import java.time.LocalDate;
 
-public class OduncAlma {
+public class OduncKaydi {
 
     private final String islemNo;
     private final LocalDate oduncTarihi;
     private final LocalDate sonTeslimTarihi;
     private LocalDate teslimTarihi;
-    private final Uye uye;
+    private final Uye kimde;
     private final KitapKopyasi kitapKopyasi;
 
-    public OduncAlma(
+    public OduncKaydi(
             String islemNo,
             LocalDate oduncTarihi,
             LocalDate sonTeslimTarihi,
             LocalDate teslimTarihi,
-            Uye uye,
+            Uye kim,
             KitapKopyasi kitapKopyasi) {
         if (islemNo == null || islemNo.isBlank()) {
             throw new IllegalArgumentException("İşlem numarası boş olamaz.");
@@ -32,7 +32,7 @@ public class OduncAlma {
                 "Teslim tarihi ödünç tarihinden önce olamaz."
             );
         }
-        if (uye == null || kitapKopyasi == null) {
+        if (kim == null || kitapKopyasi == null) {
             throw new IllegalArgumentException(
                 "Üye ve kitap kopyası boş olamaz."
             );
@@ -42,13 +42,13 @@ public class OduncAlma {
         this.oduncTarihi = oduncTarihi;
         this.sonTeslimTarihi = sonTeslimTarihi;
         this.teslimTarihi = teslimTarihi;
-        this.uye = uye;
+        this.kimde = kim;
         this.kitapKopyasi = kitapKopyasi;
 
         if (teslimTarihi == null) {
             kitapKopyasi.oduncVer();
         }
-        uye.oduncAlmaEkle(this);
+        kimde.oduncAlmaEkle(this);
         kitapKopyasi.oduncAlmaEkle(this);
     }
 
@@ -68,8 +68,8 @@ public class OduncAlma {
         return teslimTarihi;
     }
 
-    public Uye getUye() {
-        return uye;
+    public Uye getKimde() {
+        return kimde;
     }
 
     public KitapKopyasi getKitapKopyasi() {
@@ -87,5 +87,12 @@ public class OduncAlma {
         }
         kitapKopyasi.teslimAl();
         this.teslimTarihi = teslimTarihi;
+    }
+    public String oduncBilgisi() {
+
+        return "\tISLEM NO: " + islemNo +
+               " | ÜYE: " + kimde.getAd() +
+               " | ÖDÜNÇ ALMA TARİHİ : " + oduncTarihi +
+               " | TESLİM TARİHİ: " + sonTeslimTarihi;
     }
 }

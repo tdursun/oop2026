@@ -63,12 +63,11 @@ public class Main {
         // 5. Örnek: Distopya (Kayıp)
         Kitap kitap1884 = new Kitap("9789750719388", "1844", "George Orwell", 2000);
         kutuphane.add(kitap1884);
-
       
 
-        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123");
+        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
         KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
-            "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre"
+            "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre", "I29-1235"
         );
         OduncAlma odunc = new OduncAlma(
             "O001",

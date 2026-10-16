@@ -3,10 +3,12 @@ import java.util.List;
 
 public class Uye extends Kullanici {
 
+    private String ilgiAlani;
     private final List<OduncAlma> oduncAlmalar = new ArrayList<>();
 
-    public Uye(String id, String ad, String eposta, String sifre) {
+    public Uye(String id, String ad, String eposta, String sifre, String interests) {
         super(id, ad, eposta, sifre);
+        this.ilgiAlani = interests;
     }
 
     public List<OduncAlma> getOduncAlmalar() {
@@ -20,5 +22,8 @@ public class Uye extends Kullanici {
         if (!oduncAlmalar.contains(oduncAlma)) {
             oduncAlmalar.add(oduncAlma);
         }
+    }
+    public String getIlgiAlani() {
+        return ilgiAlani;
     }
 }

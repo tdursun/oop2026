@@ -29,4 +29,3 @@ mevcut ödünç aldıkları kitapların süresini uzatabilirler.
 
 2.11.Bir üye tek seferde birden fazla kitap kopyası ödünç alabilir, ancak her bir kopya için ayrı bir Ödünç Alma satırı tutulur.
 
-2.21 EKLENECEK...

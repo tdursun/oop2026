@@ -28,12 +28,12 @@ public class Main {
         
         KitapKopyasi kopya2 = new KitapKopyasi("BC002", kitap1);
         
-        System.out.println(kopya1.kopyaBilgisi());
-        System.out.println(kopya2.kopyaBilgisi());
+        //System.out.println(kopya1.kopyaBilgisi());
+        //System.out.println(kopya2.kopyaBilgisi());
         
         kopya1.oduncVer();
         
-        System.out.println(kopya1.getDurum());
+        //System.out.println(kopya1.getDurum());
         
 
         // 2. Örnek: Algoritmalar (Ödünç Verildi)
@@ -65,22 +65,25 @@ public class Main {
         kutuphane.add(kitap1884);
       
 
-        Uye uye = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
+        Uye uye1 = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
         KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
             "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre", "I29-1235"
         );
+        uye1.bilgiPrintEt();
+        gorevli.bilgiPrintEt();
+
         OduncAlma odunc = new OduncAlma(
             "O001",
             LocalDate.now(),
             LocalDate.now().plusDays(14),
             null,
-            uye,
+            uye1,
             kopya2
         );
-        System.out.println(uye.getAd() + " için işlem: " + odunc.getIslemNo());
-        System.out.println("Görevli: " + gorevli.getAd());
+        //System.out.println(uye1.getAd() + " için işlem: " + odunc.getIslemNo());
+        //System.out.println("Görevli: " + gorevli.getAd());
 
-        kutuphaneListeYazdir();
+        //kutuphaneListeYazdir();
 
     }//main
 

@@ -13,4 +13,13 @@ public class KutuphaneGorevlisi extends Kullanici {
     public String getSicilNo() {
         return sicilNo;
     }
+    
+    public void bilgiPrintEt(){
+        System.out.println("Kütüphaneci: " + 
+            "\nID        : " + super.getId()+
+            "\nAD        : " + super.getAd()+
+            "\nEPOSTA    : " + super.getEposta()+
+            "\nSicil No  : " + sicilNo
+        );
+    }
 }

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram name="ClassDiyagram" id="Cc9jagbLBwd1p3YQBy6T">
-        <mxGraphModel dx="1247" dy="735" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1247" dy="609" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -118,7 +118,7 @@
                     <mxGeometry height="26" width="210" y="138" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=19;" value="Kullanıcı" vertex="1">
-                    <mxGeometry height="164" width="160" x="-39" y="253" as="geometry"/>
+                    <mxGeometry height="190" width="160" x="-39" y="253" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-12" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="ID:int" vertex="1">
                     <mxGeometry height="26" width="160" y="26" as="geometry"/>
@@ -137,6 +137,9 @@
                 </mxCell>
                 <mxCell id="u5m2w5g44k9qJTSC1Nzf-4" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=15;" value="+ getAd(): boolean" vertex="1">
                     <mxGeometry height="26" width="160" y="138" as="geometry"/>
+                </mxCell>
+                <mxCell id="u5m2w5g44k9qJTSC1Nzf-5" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="+ bilgiPrintEt():void" vertex="1">
+                    <mxGeometry height="26" width="160" y="164" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-30" edge="1" parent="1" source="rscmFk_Y4eXVPHYxmnZr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="rscmFk_Y4eXVPHYxmnZr-11">
                     <mxGeometry relative="1" as="geometry"/>

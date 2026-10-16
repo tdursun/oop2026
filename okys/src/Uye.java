@@ -26,4 +26,13 @@ public class Uye extends Kullanici {
     public String getIlgiAlani() {
         return ilgiAlani;
     }
+    public void bilgiPrintEt(){
+        System.out.println("Üye: " + 
+            "\nID        : " + super.getId()+
+            "\nAD        : " + super.getAd()+
+            "\nEPOSTA    : " + super.getEposta()+
+            "\nilgi Alanı: " + ilgiAlani
+        );
+    }
+
 }

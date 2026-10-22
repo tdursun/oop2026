@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram name="ClassDiyagram" id="Cc9jagbLBwd1p3YQBy6T">
-        <mxGraphModel dx="1413" dy="696" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1646" dy="695" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -148,7 +148,7 @@
                 <mxCell id="u5m2w5g44k9qJTSC1Nzf-4" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=15;" value="+ getAd(): boolean" vertex="1">
                     <mxGeometry height="26" width="160" y="138" as="geometry"/>
                 </mxCell>
-                <mxCell id="u5m2w5g44k9qJTSC1Nzf-5" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="+ bilgiPrintEt():void" vertex="1">
+                <mxCell id="u5m2w5g44k9qJTSC1Nzf-5" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="+ getInfo():String" vertex="1">
                     <mxGeometry height="26" width="160" y="164" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-30" edge="1" parent="1" source="rscmFk_Y4eXVPHYxmnZr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="rscmFk_Y4eXVPHYxmnZr-11">

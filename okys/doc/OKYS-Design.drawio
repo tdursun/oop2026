@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram name="ClassDiyagram" id="Cc9jagbLBwd1p3YQBy6T">
-        <mxGraphModel dx="1247" dy="592" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1413" dy="696" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -70,7 +70,7 @@
                 </mxCell>
                 <mxCell id="pSR2M5sUEJoAkqRoiS4w-8" connectable="0" parent="pSR2M5sUEJoAkqRoiS4w-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;fontColor=light-dark(#f90606, #ededed);" value="kimde" vertex="1">
                     <mxGeometry relative="1" x="0.8141" y="-1" as="geometry">
-                        <mxPoint x="-241" y="341" as="offset"/>
+                        <mxPoint x="-248" y="379" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-9" connectable="0" parent="pSR2M5sUEJoAkqRoiS4w-5" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=29;fontColor=light-dark(#ef1d06, #ededed);" value="*" vertex="1">
@@ -128,7 +128,7 @@
                     <mxGeometry height="26" width="210" y="138" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=19;" value="Kullanıcı" vertex="1">
-                    <mxGeometry height="190" width="160" x="-39" y="253" as="geometry"/>
+                    <mxGeometry height="190" width="160" x="-48" y="292" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-12" parent="rscmFk_Y4eXVPHYxmnZr-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="ID:int" vertex="1">
                     <mxGeometry height="26" width="160" y="26" as="geometry"/>
@@ -155,7 +155,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" value="Üye" vertex="1">
-                    <mxGeometry height="60" width="160" x="70" y="533" as="geometry"/>
+                    <mxGeometry height="60" width="160" x="61" y="572" as="geometry"/>
                 </mxCell>
                 <mxCell id="u5m2w5g44k9qJTSC1Nzf-3" parent="rscmFk_Y4eXVPHYxmnZr-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="ilgiAlani: String" vertex="1">
                     <mxGeometry height="26" width="160" y="26" as="geometry"/>
@@ -167,7 +167,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="rscmFk_Y4eXVPHYxmnZr-24" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" value="KütüphaneGorevlisi" vertex="1">
-                    <mxGeometry height="60" width="180" x="-170" y="533" as="geometry"/>
+                    <mxGeometry height="60" width="180" x="-179" y="572" as="geometry"/>
                 </mxCell>
                 <mxCell id="u5m2w5g44k9qJTSC1Nzf-2" parent="rscmFk_Y4eXVPHYxmnZr-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;" value="sicilNumarasi: String" vertex="1">
                     <mxGeometry height="26" width="180" y="26" as="geometry"/>

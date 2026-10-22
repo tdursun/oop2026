@@ -40,11 +40,10 @@ public class Kullanici {
     public String getSifre() {
         return sifre;
     }
-    public void bilgiPrintEt(){
-        System.out.println("Kullanıcı: " + 
+    public String getInfo(){
+        return "Kullanıcı: " + 
             "\nID    : "+id+
             "\nAD    : " + ad+
-            "\nEPOSTA: " + eposta
-        );
+            "\nEPOSTA: " + eposta;
     }
 }

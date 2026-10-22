@@ -65,12 +65,13 @@ public class Main {
         kutuphane.add(kitap1884);
       
 
-        Uye uye1 = new Uye("U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
+        Uye uye1 = new Uye(
+            "U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
         KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
             "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre", "I29-1235"
         );
-        uye1.bilgiPrintEt();
-        gorevli.bilgiPrintEt();
+        System.out.println(uye1.getInfo());
+        System.out.println(gorevli.getInfo());
 
         OduncKaydi odunc = new OduncKaydi(
             "O001",

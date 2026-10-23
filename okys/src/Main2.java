@@ -47,8 +47,10 @@ public class Main2 {
         KutuphaneGorevlisi gorevli = new KutuphaneGorevlisi(
             "G001", "Mehmet Demir", "mehmet@29mayis.edu.tr", "sifre", "I29-1235"
         );
-        //uye1.bilgiPrintEt();
-        //gorevli.bilgiPrintEt();
+        //Kullanici k = new Kullanici("deneme","user","a@gmail.com","123");
+        System.out.println(uye1.getInfo());
+        System.out.println(uye2.getInfo());
+        System.out.println(gorevli.getInfo());
 
         OduncKaydi odunc1 = new OduncKaydi(
             "O001",

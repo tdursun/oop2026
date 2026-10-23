@@ -1,4 +1,4 @@
-public class Kullanici {
+public abstract class Kullanici {
 
     private final String id;
     private final String ad;
@@ -40,10 +40,6 @@ public class Kullanici {
     public String getSifre() {
         return sifre;
     }
-    public String getInfo(){
-        return "Kullanıcı: " + 
-            "\nID    : "+id+
-            "\nAD    : " + ad+
-            "\nEPOSTA: " + eposta;
-    }
+    public abstract String getInfo();
+    //
 }

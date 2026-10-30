@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Uye extends Kullanici implements Serializable{
+public class Uye extends Kullanici{
 
     private String ilgiAlani;
     private final List<OduncKaydi> oduncAlmalar = new ArrayList<>();

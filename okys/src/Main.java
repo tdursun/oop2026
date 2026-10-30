@@ -86,7 +86,7 @@ public class Main {
         //System.out.println(uye1.getAd() + " için işlem: " + odunc.getIslemNo());
         //System.out.println("Görevli: " + gorevli.getAd());
 
-        //kutuphaneListeYazdir(kutuphane);
+        kutuphaneListeYazdir(kutuphane);
 
         //CSVFileService dosyaServisi = new CSVFileService();
         //dosyaServisi.csvYaz("Kutuphane29Mayis.csv",kutuphane);

@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Kitap {
+public class Kitap implements Serializable{
 
     private final String isbn;
     private String baslik;
@@ -75,7 +76,7 @@ public class Kitap {
     }
 
     public String kitapBilgisi() {
-        return "ADI: " + baslik
+        return "[KİTAP] ADI: " + baslik
              + " | YAZARI: " + yazar
              + " | YAYIN YILI: " + yayinYili
              + " | ISBN: " + isbn

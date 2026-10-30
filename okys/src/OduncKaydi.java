@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class OduncKaydi {
+public class OduncKaydi implements Serializable{
 
     private final String islemNo;
     private final LocalDate oduncTarihi;
@@ -90,7 +91,7 @@ public class OduncKaydi {
     }
     public String oduncBilgisi() {
 
-        return "\tISLEM NO: " + islemNo +
+        return "[ODUNC KAYDI] ISLEM NO: " + islemNo +
                " | ÜYE: " + kimde.getAd() +
                " | ÖDÜNÇ ALMA TARİHİ : " + oduncTarihi +
                " | TESLİM TARİHİ: " + sonTeslimTarihi;

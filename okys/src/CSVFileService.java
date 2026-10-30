@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileService {
+public class CSVFileService {
         // 2. ArrayList'i CSV Dosyasına Yazma Metodu
     public static void csvYaz(String dosyaYolu, List<Kitap> kitaplar) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(dosyaYolu))) {

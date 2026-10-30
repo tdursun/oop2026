@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Uye extends Kullanici {
+public class Uye extends Kullanici implements Serializable{
 
     private String ilgiAlani;
     private final List<OduncKaydi> oduncAlmalar = new ArrayList<>();

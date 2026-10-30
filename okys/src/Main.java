@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -5,15 +6,18 @@ import java.util.List;
 public class Main {
     private static final List<Kitap> kutuphane = new ArrayList<>();
 
-    private static void kutuphaneListeYazdir() {
+    private static void kutuphaneListeYazdir(List<Kitap> kutuphanem) {
         for (Kitap kitap : kutuphane) {
             System.out.println(kitap.kitapBilgisi());
             for (KitapKopyasi kopya : kitap.getFizikselKopyalar()) {
-                System.out.println("  " + kopya.kopyaBilgisi());
+                System.out.println("\t" + kopya.kopyaBilgisi());       
+                for (OduncKaydi kayit : kopya.getOduncAlmalar()) {
+                    System.out.println("\t\t" + kayit.oduncBilgisi());
+                }
             }
         }
     }
-    public static void main(String[] args) 
+    public static void main(String[] args) throws IOException 
     {
         //ilk kitap ekleniyor
         Kitap kitap1 = new Kitap(
@@ -34,7 +38,6 @@ public class Main {
         kopya1.oduncVer();
         
         //System.out.println(kopya1.getDurum());
-        
 
         // 2. Örnek: Algoritmalar (Ödünç Verildi)
         Kitap kitapTeknik2 = new Kitap("9780262033848", "Introduction to Algorithms", "Thomas H. Cormen", 2009);
@@ -63,7 +66,6 @@ public class Main {
         // 5. Örnek: Distopya (Kayıp)
         Kitap kitap1884 = new Kitap("9789750719388", "1844", "George Orwell", 2000);
         kutuphane.add(kitap1884);
-      
 
         Uye uye1 = new Uye(
             "U001", "Ayşe Yılmaz", "ayse@29mayis.edu.tr", "sifre123", "Tarih");
@@ -84,10 +86,20 @@ public class Main {
         //System.out.println(uye1.getAd() + " için işlem: " + odunc.getIslemNo());
         //System.out.println("Görevli: " + gorevli.getAd());
 
-        //kutuphaneListeYazdir();
-        FileService dosyaServisi = new FileService();
-        dosyaServisi.csvYaz("Kutuphane29Mayis.csv",kutuphane);
+        //kutuphaneListeYazdir(kutuphane);
 
+        //CSVFileService dosyaServisi = new CSVFileService();
+        //dosyaServisi.csvYaz("Kutuphane29Mayis.csv",kutuphane);
+        
+        //Nesneyi serialize edip dosyaya yazan dosya servisi
+        ObjectFileService dosyaServisi2 = new ObjectFileService();
+
+        dosyaServisi2.saveItems("Kutuphane29Mayis.txt",kutuphane);
+
+        //test icin dosyadan geri oku
+        List<Kitap> reKutuphane = dosyaServisi2.loadItems("Kutuphane29Mayis.txt");
+        kutuphaneListeYazdir(reKutuphane);
+        
     }//main
 
 }

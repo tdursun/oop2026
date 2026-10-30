@@ -1,4 +1,8 @@
-public abstract class Kullanici {
+import java.io.Serializable;
+
+public abstract class Kullanici implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private final String id;
     private final String ad;

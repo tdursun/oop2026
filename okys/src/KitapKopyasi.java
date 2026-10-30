@@ -1,8 +1,9 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class KitapKopyasi {
+public class KitapKopyasi implements Serializable{
 
     private final String barkod;
     private final Kitap kitap;
@@ -87,8 +88,7 @@ public class KitapKopyasi {
     }
 
     public String kopyaBilgisi() {
-
-        return "BARKOD: " + barkod +
+        return "[KOPYA] BARKOD: " + barkod +
                " | KİTAP: " + kitap.getBaslik() +
                " | ISBN: " + kitap.getIsbn() +
                " | DURUM: " + durum;

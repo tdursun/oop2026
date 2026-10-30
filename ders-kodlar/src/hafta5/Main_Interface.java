@@ -43,7 +43,8 @@ public class Main_Interface {
     public static void main(String[] args) {
         EmailService es = new EmailService();
         SMSService sms = new SMSService();
-        OrderService siparisServisi = new OrderService(es);
+
+        OrderService siparisServisi = new OrderService(sms);
         siparisServisi.completeOrder();
         siparisServisi.completeOrder();
         siparisServisi.completeOrder();

@@ -82,4 +82,8 @@ public class Kitap {
              + " | KOPYA SAYISI: " + fizikselKopyalar.size();
     }
 
+    public String toCSV(){
+        return isbn+","+baslik+","+yazar+","+yayinYili;
+    }
+
 }//Kitap

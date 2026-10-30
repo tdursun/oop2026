@@ -1,4 +1,7 @@
 package hafta5;
+import java.util.ArrayList;
+import java.util.List;
+
 interface CargoService {
     void gonder(String orderId,String address);
     String izle(String trackingNumber);
@@ -37,24 +40,36 @@ class ArasCargo implements CargoService {
         return "IN_TRANSIT";
     }
 }
+/**
+ * SİPARİŞ SERVİSİ
+ * SiparisService
+ */
 class SiparisService {
-    private CargoService cargo;
-    SiparisService(CargoService cargo) {
-        this.cargo = cargo;
+    //private CargoService cargo;
+    private List<CargoService> tanimliKargolar = new ArrayList<>();
+    private CargoService tercihEdilenKargo;
+    
+    SiparisService(List<CargoService> kargolar) {
+        this.tanimliKargolar = kargolar;
     }
     public void sendOrder(String orderId, String address) {
-        if(cargo instanceof YurticiCargo){
+
+        /*if(cargo instanceof YurticiCargo){
             double fiyat = ((YurticiCargo)cargo).fiyatHesapla(4);
             System.out.println("Kargonuzun maliyeti : "+ fiyat);
-        }
-        cargo.gonder(orderId, address);
+        }*/
+        tercihEdilenKargo.gonder(orderId, address);
     }
 
     public String kargomNerede(String kargoNo){
-        return cargo.izle(kargoNo);
+        return tercihEdilenKargo.izle(kargoNo);
     }
+    
+    public void setTercihEdilenKargo(CargoService secilen){
+        this.tercihEdilenKargo = secilen;
+    }
+    
 }
-
 
 public class Main_Interface2 {
     public static void main(String[] args) {
@@ -62,9 +77,17 @@ public class Main_Interface2 {
         YurticiCargo yurticiCargo = new YurticiCargo();
         DHLCargo dhlCargo = new DHLCargo();        
         ArasCargo arasCargo = new ArasCargo();
+        List<CargoService> firmalar = new ArrayList<>();
+        firmalar.add(yurticiCargo);
+        firmalar.add(arasCargo);
+        firmalar.add(dhlCargo);
 
-        SiparisService siparisServisi = new SiparisService(yurticiCargo);
 
+        SiparisService siparisServisi = new SiparisService(firmalar);
+        //Müşteriye sorduk, Hangi Kargoyu tercih ettiğini
+        //Müşteri seçimini yaptı
+        siparisServisi.setTercihEdilenKargo(dhlCargo);
+        
         siparisServisi.sendOrder("123", "Elmali Kent Kampusu, Umraniye/ISTANBUL");
         
     }

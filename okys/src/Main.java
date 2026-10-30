@@ -85,6 +85,8 @@ public class Main {
         //System.out.println("Görevli: " + gorevli.getAd());
 
         //kutuphaneListeYazdir();
+        FileService dosyaServisi = new FileService();
+        dosyaServisi.csvYaz("Kutuphane29Mayis.csv",kutuphane);
 
     }//main
 
